@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
+import { HashRouter } from 'react-router-dom';
+import Routers  from './routes/routers';
 import './App.less';
 import './assets/styles/style.css'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Button size='large'>我是antd</Button>
-        {/* <Button0>我是antd</Button0> */}
-      </div>
+      <HashRouter>
+        <Routers />
+      </HashRouter>
     );
   }
 }
